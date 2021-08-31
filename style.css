@@ -1,0 +1,255 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&family=ZCOOL+KuaiLe&display=swap');
+
+body {
+    font-family: 'Dosis', sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    margin-bottom: 0.5em;
+}
+
+.gallery-image img {
+    width: 100%;
+}
+
+
+header .header {
+    display: table;
+    width: 100%;
+    height: calc(100vh - 500px);
+}
+
+.header-banner {
+
+    height: 100px;
+    width: 100%;
+
+    background-image: url("img/banner.png");
+    background-position: center;
+    background-repeat: repeat-x;
+
+    image-rendering: pixelated;
+
+    position: sticky;
+    top: 0;
+    z-index: 90;
+
+    margin: auto;
+}
+
+header .logo {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+header h1 {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+    color: #333;
+    line-height: 70px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px #000000;
+}
+
+header h1:hover {
+    color: #FF9999;
+}
+
+header h2 {
+
+    font-weight: 300;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #333;
+    text-transform: uppercase;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: auto;
+}
+
+nav a {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #172029;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 16px;
+    white-space: nowrap;
+}
+
+hr {
+    color: #2d3340;
+    border-width: 1px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
+
+main {
+    padding: 20px 30px;
+}
+
+.text-content {
+    padding: 10px;
+}
+
+.middle-content {
+    display: flex;
+}
+
+.image-content {
+    display: none;
+}
+
+.index-header h2 {
+    font-weight: 600;
+    font-size: 28px;
+    letter-spacing: 2px;
+    padding: 10px;
+    color: #3a383d;
+    text-transform: uppercase;
+    text-align: left;
+
+}
+
+.gallery-image {
+    margin: 10px;
+    position: relative;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+}
+
+.gallery-image .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 100%;
+}
+
+.gallery-image:hover .container {
+    border-color: #FFF;
+}
+
+.gallery-image:hover .container img {
+    display: inline;
+}
+
+.gallery-image:hover .post-header {
+    color: #FFF;
+}
+
+.gallery-image .container {
+    border: 2px solid #333;
+}
+
+.gallery-image .container img {
+    display: none;
+}
+
+.gallery-image .post-header {
+    color: #333;
+}
+
+.post-header {
+    /*kujundus*/
+    font-weight: 700;
+    font-size: 22px;
+    letter-spacing: 3px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 9px #111111;
+
+    /*positsioneerimine*/
+    position: absolute;
+}
+
+.gallery-links {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+
+footer {
+    width: calc(100% - 80px);
+    padding: 40px 40px;
+    background-color: #172029;
+    margin-top: 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    width: fit-content;
+}
+
+footer ul li {
+    display: block;
+    padding: 0 0 10px 0;
+}
+
+footer ul li p {
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+footer ul li {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.footer-sm {
+    width: 32px;
+}
+
+.footer-sm i {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 30px;
+    color: #FFF;
+}
+
+
+@media only screen and (min-width: 950px) {
+
+    .image-content {
+        display: block;
+    }
+
+    hr.header-separator {
+        display: none;
+    }
+
+    .header-banner {
+        width: calc(100vw - 80px);
+    }
+
+    header .header {
+        height: 200px;
+    }
+
+}
