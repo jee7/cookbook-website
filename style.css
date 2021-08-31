@@ -239,10 +239,6 @@ footer ul li {
         display: block;
     }
 
-    hr.header-separator {
-        display: none;
-    }
-
     .header-banner {
         width: calc(100vw - 80px);
     }
@@ -251,4 +247,12 @@ footer ul li {
         height: 200px;
     }
 
+    .mobile-only {
+        display: none;
+    }
+
+    .gallery-links {
+        padding: 40px 0;
+        justify-content: space-around;
+    }
 }
